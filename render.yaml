@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: realtime-quiz-system
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ADMIN_PASS
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: DB_SECRET
+        sync: false
+      - key: PUBLIC_BASE_URL
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false

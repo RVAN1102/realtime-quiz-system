@@ -1,0 +1,31 @@
+{
+  "name": "realtime-quiz-system",
+  "version": "1.0.0",
+  "description": "Website làm bài trắc nghiệm realtime kế thừa kiến trúc Express + JWT + Socket.IO từ đồ án IoT.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "health": "node -e \"fetch('http://localhost:3000/health').then(r=>r.json()).then(console.log).catch(console.error)\""
+  },
+  "keywords": [
+    "quiz",
+    "socket.io",
+    "express",
+    "jwt",
+    "realtime"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "socket.io": "^4.8.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
